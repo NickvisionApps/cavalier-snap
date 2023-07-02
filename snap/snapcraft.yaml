@@ -91,7 +91,7 @@ parts:
       - libfftw3-double3
       - libiniparser1
     prime:
-      - usr/lib/x86_64-linux-gnu/libiniparser.so.1
+      - usr/lib/$CRAFT_ARCH_TRIPLET/libiniparser.so.1
       - usr/lib/$CRAFT_ARCH_TRIPLET/libfftw3.so.3
       - usr/lib/$CRAFT_ARCH_TRIPLET/libfftw3.so.3.5.8
 slots:

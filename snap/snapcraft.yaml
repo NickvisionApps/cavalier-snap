@@ -21,12 +21,7 @@ parts:
     source-tag: '0.8.3'
     source-depth: 1
     build-environment:
-      - CXXFLAGS: -I$CRAFT_STAGE/usr/include
-      - CFLAGS: -I$CRAFT_STAGE/usr/include -I/snap/gnome-42-2204-sdk/current/usr/include
-      - LDFLAGS: -L$CRAFT_STAGE/usr/lib
-      - PATH: $CRAFT_STAGE/usr/bin:$PATH
-      - PKG_CONFIG_PATH: $CRAFT_STAGE/usr/lib/pkgconfig:$PKG_CONFIG_PATH
-      - LD_LIBRARY_PATH: $CRAFT_STAGE/usr/lib:$LD_LIBRARY_PATH
+      - CFLAGS: -I/snap/gnome-42-2204-sdk/current/usr/include
     plugin: autotools
     autotools-configure-parameters:
       - --prefix=/usr

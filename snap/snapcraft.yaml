@@ -48,7 +48,7 @@ parts:
     # See 'snapcraft plugins'
     plugin: nil
     source: https://github.com/NickvisionApps/Cavalier.git
-    source-tag: '2023.7.0'
+    source-tag: '2023.8.0-beta1'
     source-depth: 1
     build-environment:
       - LDFLAGS: -L$CRAFT_STAGE/usr/lib

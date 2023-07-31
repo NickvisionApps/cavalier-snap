@@ -48,7 +48,7 @@ parts:
     # See 'snapcraft plugins'
     plugin: nil
     source: https://github.com/NickvisionApps/Cavalier.git
-    source-tag: '2023.8.0-rc1'
+    #source-tag: ''
     source-depth: 1
     build-environment:
       - LDFLAGS: -L$CRAFT_STAGE/usr/lib
@@ -64,6 +64,7 @@ parts:
       wget https://dot.net/v1/dotnet-install.sh -O dotnet-install.sh
       chmod +x ./dotnet-install.sh
       ./dotnet-install.sh --channel 7.0
+      sed -i 's/Icon=org\.nickvision\.cavalier/Icon=snap.cavalier.org.nickvision.cavalier/' $CRAFT_PART_SRC/NickvisionCavalier.Shared/org.nickvision.cavalier.desktop.in
       patch -p1 < $CRAFT_PROJECT_DIR/snap/cavalier.patch
     override-build: |
       set -eux

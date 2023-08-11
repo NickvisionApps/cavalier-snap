@@ -48,7 +48,7 @@ parts:
     # See 'snapcraft plugins'
     plugin: nil
     source: https://github.com/NickvisionApps/Cavalier.git
-    source-tag: '2023.8.1-beta1'
+    source-tag: '2023.8.1'
     source-depth: 1
     build-environment:
       - LDFLAGS: -L$CRAFT_STAGE/usr/lib
@@ -105,8 +105,6 @@ apps:
     command: usr/bin/org.nickvision.cavalier
     common-id: org.nickvision.cavalier
     desktop: usr/share/applications/org.nickvision.cavalier.desktop
-    environment:
-      CAVALIER_INPUT_METHOD: pulse
     extensions: [ gnome ]
     plugs:
       - audio-playback

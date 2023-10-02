@@ -1,8 +1,12 @@
-name: cavalier # you probably want to 'snapcraft register <name>'
-base: core22 # the base snap is the execution environment for this snap
+name: cavalier 
+base: core22
 adopt-info: cavalier
-grade: stable # must be 'stable' to release into candidate/stable channels
-confinement: strict # use 'strict' once you have the right plugs and slots
+grade: stable 
+confinement: strict
+website: https://github.com/NickvisionApps/Cavalier
+donation: https://github.com/sponsors/nlogozzo
+issues: https://github.com/NickvisionApps/Cavalier/issues
+source-code: https://github.com/NickvisionApps/Cavalier
 #compression: lzo
 architectures:
   - build-on: amd64

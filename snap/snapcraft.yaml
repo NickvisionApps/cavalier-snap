@@ -22,7 +22,7 @@ parts:
   cava:
     #after: [ fftw3f ]
     source: https://github.com/karlstav/cava.git
-    source-tag: '0.9.1'
+    source-tag: '0.10.0'
     source-depth: 1
     build-environment:
       - CFLAGS: -I/snap/gnome-42-2204-sdk/current/usr/include
